@@ -8,11 +8,18 @@ html {
     font-weight: 400,600,700,800,900;
     font-style: normal, italic;
     */
+    text-align:center
     
 }
 
 html * {
     box-sizing: border-box;
+}
+
+body {
+    width:960px; 
+    margin:0 auto; 
+    text-align:left
 }
 
 img {
@@ -29,21 +36,55 @@ h1 {
     /* color: rgb(84,151,144); */
     /* color: rgb(75,75,75);  */
     color: rgb(32,138,167);
+    margin-top: 60 px;
+    margin-bottom: 40px;
     /* color:rgb(7,89,137);  */
     /* text-shadow: 2px 2px rgb(7,89,137);  */
 }
 
-h2, h3 {
+h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 150%;
     color: rgb(7,89,137);
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-article {
-    line-height: 120%;
-    background-color: rgb(32,138,167);
+h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: rgb(7,89,137);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.questiontext {
+    margin-bottom: 10px; 
+}
+
+.question {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.highlightp {
+    color: rgb(222,108,190);
+    font-weight: 600;
+}
+
+.highlightt {
+    color: rgb(75,115,255);
+    font-weight: 600;
+}
+
+.highlighti {
+    color: rgb(44,205,89);
+    font-weight: 600;
 }
 
 header {
@@ -127,208 +168,3 @@ header nav >ul >li >ul >li:hover > ul{
     text-align: center;
 }
 
-article {
-    display: flex;
-    align-items: normal; 
-    background: rgb(196, 218, 224);
-    flex-wrap: wrap;
-}
-
-article section {
-    color: rgb(75,75,75);
-    width: 66%;
-    padding-left: 10%;
-    padding-right:10%;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    background:rgb(240,243,246);
-}
-
-article aside {
-    width: 34%;
-    padding: 10%;
-    padding-left: 5%;
-    padding-top: 15%;
-    color: rgb(7,89,137);
-    background-color: rgb(196, 218, 224);
-}
-
-article:nth-of-type(2) section {
-    width: 66%;
-    padding-top: 0%;
-    padding-right:10%;
-    background: rgb(240,243,246);
-}
-
-/* change the icon */
-article ul, article ol{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around; 
-    list-style-type: disc;
-    margin-left: 1rem;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    color: rgb(7,89,137);
-    padding-top: 1%;
-    padding-bottom: 1%; 
-}
-
-article a{
-    color: rgb(32,138,167);
-}
-figure{
-    padding-top: 2%;
-} 
-
-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 15%;
-    padding-top: 0.6%;
-    padding-bottom: 0.6%;
-    line-height: 120%;
-    background-color:rgb(75,75,75);
-    /* background-color: orange; */
-}
-
-footer p{
-    align-self: center;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: rgb(240,243,246);
-}
-
-footer nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: rgb(240,243,246);
-}
-
-footer nav ul{
-    margin: 0 1rem;
-}
-
-footer nav ul li a{
-    color: rgb(240,243,246);
-    text-decoration: none;
-    opacity: 50%;
-} 
-
-@media screen and (max-width: 900px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    header > a{
-        display: flex;
-        justify-content: center;
-        margin-left: 0%;
-    }
-
-    header nav{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }  
-
-    header nav> ul{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    header nav> ul > li {
-        width: 100%;
-    }
-
-    header nav >ul >li> ul {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-
-} 
-
-@media screen and (max-width: 700px) {
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header nav{
-        margin-right: 5%;
-        width: 100px;
-        height: 70px;
-    }
-    
-    header >a{
-        margin-left: 7%;
-        margin-top: 0%;
-    }
-
-    /* header nav >ul >li >a {
-        display: none;
-    }  */
-
-    header nav ul li{
-        width: 100%;
-    }
-
-    /* header nav ul li ul{
-        display: flex;
-        flex-direction: column;
-    }  */
-
-    header nav >ul >li > a{
-        display: block;
-    }
-
-    header nav >ul >li img{
-        width: 40px;
-    }
-
-    header nav >ul >li > ul {
-        display: none;
-    }
-
-    header nav > ul > li:hover > ul {
-        display: block;
-        display: flex;
-        background-color:rgb(75,75,75) ;
-        flex-direction: row;
-        padding: 0rem;
-        width: 120px;
-    }
- 
-
-    header nav ul li:hover >a {
-        background-color:rgb(32,138,167);
-    }
-
-    header nav >ul >li >ul >li:hover > ul >a{
-        padding-left: 1 rem;
-    }
-    
-    article section, article aside {
-        width: 100%;
-        padding-top: 10%;
-    }
-
-    article:nth-of-type(2) section {
-        width: 100%;
-        padding-top: 10%;
-    }
-
-}
