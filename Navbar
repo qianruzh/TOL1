@@ -14,35 +14,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
-
-    </head>    
-    <body>
-        <header>
-            <a href="index.html"><img src="images/HTML5CSS3Logos.svg" alt="HTM5 and CSS3 logos"></a>       
-            <nav>
-                <ul>
-                    <li>
-                        <!-- you are welcome to change the menu word for a hamburger icon or something of the like -->
-                        <a href="#"><img src="images/hamburger.png"></a>
-                        <ul>
-                            <li>
-                                <a href="#">link one</a>
-                            </li>
-                            <li>
-                                <a href="#">link two</a>
-                            </li>
-                            <li>
-                                <a href="#">link three</a>                         
-                            </li>
-                            <li>
-                                <a href="#">link four</a>
-                            </li>
-                            <li>
-                                <a href="#">link five</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </nav>
-        </header>
+    </head> 
+</html>
+    
