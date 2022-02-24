@@ -13,7 +13,17 @@
         <!-- here's what I got from Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+        <section class="nav-bar">  
+        <h3>Progress</h3>      
+          <ol class="progress-bar">
+            <li class="is-active"><span> Page1</span></a></li>  
+            <li ><span>Page2</span></li>  
+            <li><span>Page3</span></li>
+          </ol>
+        </section>
   </head>
 
   <body>
@@ -46,41 +56,50 @@
   </nav> -->
 
   	<div>
-      <h1>Learning Goals</h1>
-      <p>Generating your own hypothesis or concepts(Invent)</p></br>
+      <h1>Make A Guess</h1>
+      <div class="learninggoals">
+      <h4>Learning goals</h4>
+      <ul>
+        <li>Generating your own hypothesis or concepts(Invent)</li>
+      </ul>
+      <hr>
+      </div>
+
   	</div>
 
   	<section>
       <p> Hi there! Now that we have learned about Simple Interest, are you ready to learn more about how the interest system works? Actually, besides the Simple Interest, <b>Compound Interest</b> is also very common in our daily life. Let’s look at why.</p>
   		<h2>Example Questions</h2>
-  		<p class="questiontext">Let’s meet Jerry, a middle schooler who wants to learn about personal finance. Suppose he wants to save $1000 and would like to deposit it in the bank. Jerry chooses to keep a compound interest at the rate 12%. How much money will Jerry have after 3 years?</p></br>
+      <div class="questionstyle">
+  		<p class="questiontext">Let’s meet Jerry, a middle schooler who wants to learn about personal finance. Suppose he wants to save <span class="highlightp">$1000</span> and would like to deposit it in the bank. Jerry chooses to keep a compound interest at the rate <span class="highlighti">12%</span>. How much money will Jerry have after <span class="highlightt">3 years</span>?</p>
+      </div>
   
-  		<div>
+  		<div class="subquestion">
   			<b>Use the graph below and try to answer the following questions.</b>
       </div>
 
   		<div>
-  		  <p>Sample Graph, suppose it be interactive and learners can adjust the years</p>
+  		  <p class="question">Sample Graph, suppose it be interactive and learners can adjust the years</p>
         <svg>AAA</svg>
   		</div>
 
       <h3>Fill in the blank</h3>
 
   		<div>
-      <p class="question">1.The initial principal investment for Jerry is $ <input type="text" id="p1" name="answer" size="20"> . </p>
+      <p class="question">1.The <span class="highlightp">initial principal</span> investment for Jerry is $ <input type="text" id="p1" name="answer" size="20"> . </p>
       </div>
 
       <div>
-        <p class="question">2.The interest rate that is added on to the amount Jerry invested is <input type="text" id="p1" name="answer" size="20"> %. </p>
+        <p class="question">2.The <span class="highlighti">interest rate</span> that is added on to the amount Jerry invested is <input type="text" id="p1" name="answer" size="20"> %. </p>
       </div>
 
       <div>
-        <p class="question">3. The length of time this interest rate accumulates in the initial graph is <input type="text" id="p1" name="answer" size="20"> year.</p>
+        <p class="question">3. The <span class="highlightt">length of time</span> this interest rate accumulates in the initial graph is <input type="text" id="p1" name="answer" size="20"> year.</p>
       </div>
 
       <div>
         <p class="question">4. How much will be in Jerry’s account after these years?</p>
-        <ul>
+        <ul class="subq">
           <li class="question">
           a. At the end of the first year, Jerry will have $ <input type="text" id="p1" name="answer" size="20"> interest for this year, and have $ <input type="text" id="p1" name="answer" size="20"> in his account.
           </li> 

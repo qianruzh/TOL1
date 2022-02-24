@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Compound Interest</title
     <meta charset="utf-8">
-    <title>Compound Interest</title>
-    <link rel="stylesheet" href="style.css">
+        <meta name="keywords" content="html5, css, the internet, webdesign, cats, html features">
+        <meta name="description" content="New features in HTML5 and CSS3 allow us to build a better web.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- here's what I got from Adobe Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/wst5rwr.css">
+        <link rel="stylesheet" href="https://use.typekit.net/wst5rwr.css">
+        <!-- here's what I got from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+        <section class="nav-bar">  
+        <h3>Progress</h3>      
+    <ol class="progress-bar">
+      <li class="is-complete"><span> Page1</span></li>  
+      <li class="is-complete"><span>Page2</span></li>  
+      <li class="is-active"><span>Page3</span></li>
+    </ol>
+    </section>
   </head>
   <body>
   	<div>
-      <h1>Learning Goals</h1>
+      <h1>Practice</h1>
       <p>Now we have learned the formula to calculate compound interest, let’s try to use formula to solve the problem.  </p>
   	</div>
 
   	<section>
   		<h2>Example Questions</h2>
+      <div class="questionstyle">
   		<p class="questiontext">Mr. Z makes an initial investment of $ <span class="highlightp">5,000</span> for a period of <span class="highlightt">3 years</span>. Find the value of the investment after the three years if the investment earns the annual return of <span class="highlighti">12 %</span> compounded monthly.</p>
+      </div>
 
   		<div>
-  			<b>The process to solve this problem would be:</b>
+  			<p class="subquestion">The process to solve this problem would be:</p>
   			
   			<div>
-  			<p>P (Initial value of investment) = $ 5000</p> 
+  			<p class="question"> <span class="highlightp">P</span> (Initial value of investment) = <span class="exampleanswer">$ 5000</span></p> 
   			</div>
 
   			<div>
-  			<p>i (Rate of return each compound) =</p> 
-  			<div>it is compounded monthly, so i should be the monthly return rate. Now we only know the annual return rate is 12%, so the monthly return rate should be 12%/12=1%</div>
+  			<p class="question"><span class="highlighti">i</span> (Rate of return each compound) = <span class="exampleanswer">it is compounded monthly, so i should be the monthly return rate. Now we only know the annual return rate is 12%, so the monthly return rate should be 12%/12=1%</span></p> 
   			</div>
 
   			<div>
-  			<p>t (total compounded times) =</p> 
-  			<div>since it’s compounded monthly, so t should be 3*12 = 36 months in 3 years</div>
+  			<p class="question"><span class="highlightt">t</span> (total compounded times) = <span class="exampleanswer">since it’s compounded monthly, so t should be 3*12 = 36 months in 3 years</span></p> 
   			</div>
 
   			<div>
-  			<p>A =</p> 
-  			<div>P(1 +i)^n = 5000*(1+ 1%)^36 = 7,153.84</div>
+  			<p class="question">A = <span class="exampleanswer">P(1 +i)^n = 5000*(1+ 1%)^36 = 7,153.84</span></p> 
   			</div>
   		</div>
 
@@ -45,65 +63,69 @@
 
   		<container>
   		<h3>Practice 1</h3>
+      <div class="questionstyle">
   		<p class="questiontext">Mr. Z makes an initial investment of $ 5,000 for a period of 3 years. Find the value of the investment after the three years if the investment earns the monthly return of 0.5 % compounded yearly.</p>
+      </div>
 
   		<div>
-  			<b>The process to solve this problem would be:</b>
+  			<p class="subquestion">The process to solve this problem would be:</p>
   			
   			<div>
   			<p class="question">P (Initial value of investment) = $ <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb1p">feedback</div>
 
 
   			<div>
   			<p class="question">i (Rate of return each compound) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb1i">feedback</div>
 
 
   			<div>
   			<p class="question">t (total compounded times) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb1i">feedback</div>
 
 
   			<div>
   			<p class="question">A = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fbia">feedback</div>
 
   		</div>
   		</container>
 
   		<container>
   		<h3>Practice 2</h3>
+      <div class="questionstyle">
   		<p class="questiontext">If an amount of $7,000 is deposited into a savings account at an annual interest rate of 5%, compounded yearly, what’s the value of the investment after 10 years?</p>
+      </div>  
 
   		<div>
-  			<b>The process to solve this problem would be:</b>
+  			<p class="subquestion">The process to solve this problem would be:</p>
   			
   			<div>
   			<p class="question">P (Initial value of investment) = $ <input type="text" id="p1" name="answer" size="20"></p> 
   			<button name="button">Press me</button></div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb2p">feedback</div>
 
   			<div>
   			<p class="question">i (Rate of return each compound) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb2i">feedback</div>
 
 
   			<div>
   			<p class="question">t (total compounded times) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb2t">feedback</div>
 
 
   			<div>
   			<p class="question">A = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
-  			<div class="hint">feedback</div>
+  			<div class="feedback" id="fb2a">feedback</div>
 
   		</div>
   		</container>
@@ -112,13 +134,14 @@
 
     <section>
   		<h2>Additional Questions</h2>
+      <div class="questionstyle">
   		<p class="questiontext">Suppose you have $1000, you can either choose to save it by keeping a simple interest at the rate of 12%, or to keep a compound interest at the rate of 10%, which one would you choose?</p>
+      </div>
 
-  		<div>
-  			<div>text box</div>
-  		</div>
+  		<textarea id="AQ" name="AQ" rows="4" cols="100">
+      </textarea>
 
-  		<div class="hint">feedback</div>
+  		<div class="feedback" id="fbaq">feedback</div>
 
   		</section>
       
