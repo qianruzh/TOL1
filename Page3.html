@@ -18,8 +18,8 @@
         <section class="nav-bar">  
         <!-- <h3>Progress</h3>       -->
     <ol class="progress-bar">
-      <li class="is-complete"><span> Page1</span></li>  
-      <li class="is-complete"><span>Page2</span></li>  
+      <li class="is-complete" onclick="jumpto1()"><span> Page1</span></li>  
+      <li class="is-complete" onclick="jumpto2()"><span>Page2</span></li>  
       <li class="is-active"><span>Page3</span></li>
     </ol>
     </section>
@@ -27,6 +27,14 @@
   <body>
   	<div>
       <h1>Practice</h1>
+      <div class="learninggoals">
+      <h4>Learning goals</h4>
+      <ul>
+        <li>Solve compound interest problems with the formula</li>
+      </ul>
+      <hr>
+      </div>
+
       <p>Now we have learned the formula to calculate compound interest, let’s try to use formula to solve the problem.  </p>
   	</div>
 
@@ -147,3 +155,12 @@
       
   </body>
 </html>
+
+<script>
+    function jumpto1() {
+        window.location.href='Page1.html';
+    }
+    function jumpto2() {
+        window.location.href='Page2.html';
+    }
+</script>
