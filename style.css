@@ -18,8 +18,9 @@ html * {
 
 body {
     width:800px; 
-    margin:0 auto; 
+    margin: 0 auto; 
     text-align:left
+
 }
 
 img {
@@ -133,9 +134,18 @@ input[type="radio"] {
     margin-left: 10px;
 }
 
+input[type="text"] {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .learninggoals ul{
     list-style-type: circle;
     list-style-position: inside;
+}
+
+footer {
+    padding-bottom: 200px;
 }
 
 header {

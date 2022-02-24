@@ -38,13 +38,13 @@
     
     <h2>Case Study</h2>
     <div class="questionstyle">
-    <p class="questiontext">Jack deposited $10,000 at 20% per annum compounded quarterly in Bank A. After 6 month he withdrew the money. What is the total amount and interest he got?</p>
+    <p class="questiontext">Jack deposited <span class="highlightp">$10,000</span> at <span class="highlighti">20% per annum compounded</span> quarterly in Bank A. After <span class="highlightt">6 month</span> he withdrew the money. What is the total amount and interest he got?</p>
     </div>
 
     <!-- STEP 1 -->
     <h3>Step 1: identify key features in the questions</h3>
     <p class="subquestion">To answer this question, we are going to figure out the following questions by using the highlighted part in the case:</p>
-    <p class="question">1. How much is Jack's principal?</p>
+    <p class="question">1. How much is Jack's <span class="highlightp">principal</span>?</p>
         <input type="radio" value="10000">
         <label>10000</label><br/>
         <input type="radio" value="20%">
@@ -54,7 +54,7 @@
         <input type="radio" value="6 months">
         <label>6 months</label><br/>
     
-    <p class="question">2. By what percentage is the principal going to increase annually？</p>
+    <p class="question">2. By what <span class="highlighti">percentage</span> is the principal going to increase annually？</p>
         <input type="radio" value="10000">
         <label>10000</label><br/>
         <input type="radio" value="20%">
@@ -74,7 +74,7 @@
         <input type="radio" value="6 months">
         <label>6 months</label><br/>
 
-    <p class="question">4. How long later Jack withdrew the money from the bank?</p>
+    <p class="question">4. <span class="highlightt">How long</span> later Jack withdrew the money from the bank?</p>
         <input type="radio" value="10000">
         <label>10000</label><br/>
         <input type="radio" value="20%">
@@ -85,42 +85,42 @@
         <label>6 months</label><br/>
     
     <p class="subquestion"><b>Let's answer the following two questions to convert the problem into a percentage change problem: </b></p>
-    <p class="question">We already know “by what percentage is the principal going to increase annually” and “how often will 
+    <p class="question">5. We already know “by what percentage is the principal going to increase annually” and “how often will 
         compound interest be calculated”. </p>
-    <p><b>Do you know by what percentage is the principal going to increase each time when calculating the 
-        compound interest? </b></p>
-    <input type="text" placeholder="placeholder text">
+    <p>Do you know by what percentage is the principal going to increase each time when calculating the 
+        compound interest? <input type="text" placeholder="placeholder text"> </p>
+    
 
-    <p class="subquestion">We already know “How long later Jack withdrew the money from the bank”. </p>
-    <p class="question"><b>During that time, how many times will the compound interest be calculated? </b></p>
-    <input type="text" placeholder="placeholder text">
+    <p class="question">6. We already know “How long later Jack withdrew the money from the bank”. </p>
+    <p>During that time, how many times will the compound interest be calculated? <input type="text" placeholder="placeholder text"></p>
+    
 
     <!-- STEP 2 -->
     <h3>Step 2: connect the features with the invented formula</h3>
     <p>Now the question has been converted to increase 10000 by 5% twice.</p>
     <p><b>By using the formula “A(n) = P(1 +i)^n” you’ve invented, could you explain the meaning of each symbol in the formula?</b>
         E.g. A means the sum of principal and interest, which is what we are going to calculate.</p>
-    <p class="question">P means <input type="text" placeholder="placeholder text">, which is: <input type="text" placeholder="placeholder text"> </p>
-    <p class="question">i means <input type="text" placeholder="placeholder text">, which is: <input type="text" placeholder="placeholder text"> </p>
-    <p class="question">n means <input type="text" placeholder="placeholder text">, which is: <input type="text" placeholder="placeholder text"> </p>
+    <p class="question">1. <span class="highlightp">P</span> means <input type="text" placeholder="placeholder text">, which is: <input type="text" placeholder="placeholder text"> </p>
+    <p class="question">2. <span class="highlighti">i</span> means <input type="text" placeholder="placeholder text">, which is: <input type="text" placeholder="placeholder text"> </p>
+    <p class="question">3. <span class="highlightt">n</span> means <input type="text" placeholder="placeholder text">, which is: <input type="text" placeholder="placeholder text"> </p>
 
 
     <!-- STEP 3 -->
     <h3>Step 3: answer the question based on the formula and the values</h3>
     <p>You have identified the meaning and exact values of the symbols in the formula. Answer the following fill-in-the-blank questions:</p>
     <!-- <p class="question"><b>What is the total amount Jack got after 6 month?</b></p> -->
-    <label for="step3-1">What is the total amount Jack got after 6 month?</label><br>
-    <textarea id="step3-1" name="step3" rows="4" cols="100">
-    </textarea><br>
+    <p class="question"> 1. What is the total amount Jack got after 6 month?
+    <input id="step3-1" name="step3-1" type="text" placeholder="place">
+    </input></p>
  
-    <label for="step3-2">Briefly explain how to calculate the interest?</label><br>
-    <textarea id="step3-2" name="step3" rows="4" cols="100">
-    </textarea><br>
+    <p class="question">2. Briefly explain how to calculate the interest?</p>
+    <textarea id="step3-2" name="step3-2" rows="4" cols="100">
+    </textarea>
 
-    <label for="step3-3">What is the total amount Jack got after 6 month?</label><br>
-    <textarea id="step3-3" name="step3" rows="4" cols="100">
-    </textarea><br>
 </body>
+<footer>
+    
+</footer>
 
 <script>
     function jumpto1() {
