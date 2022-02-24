@@ -48,7 +48,7 @@ h2 {
     font-size: 1.5rem;
     line-height: 150%;
     color: rgb(7,89,137);
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -58,18 +58,35 @@ h3 {
     font-size: 1.2rem;
     line-height: 150%;
     color: rgb(7,89,137);
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
+.questionstyle {
+    background: rgb(253,218,189);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid rgb(249,133,36);
+    border-radius: 25px;
+}
+
+.subquestion{
+    margin-top: 30px;
+    margin-bottom: -15px;
+    font-weight: 600;
+}
 
 .questiontext {
-    margin-bottom: 10px; 
+    margin-bottom: 30px; 
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+
 }
 
 .question {
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .highlightp {
@@ -85,6 +102,14 @@ h3 {
 .highlighti {
     color: rgb(44,205,89);
     font-weight: 600;
+}
+
+.exampleanswer{
+    color: rgb(95,95,95);
+}
+input[type="radio"] {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 header {
