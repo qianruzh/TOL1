@@ -28,10 +28,10 @@ var xScale = d3.scaleLinear().domain([0, 10]).range([0, width]),
 yScale = d3.scaleLinear().domain([1000, 7000]).range([height, 0]);
         
 var g = svg.append("g")
-    .attr("transform", "translate(" + 100 + "," + 30 + ")");
+    .attr("transform", "translate(" + 90 + "," + 30 + ")");
 
 svg.append('text')
-.attr('x', width/2 + 100)
+.attr('x', width/2 + 90)
 .attr('y', 30)
 .attr('text-anchor', 'middle')
 .style('font-family', 'Helvetica')
@@ -40,7 +40,7 @@ svg.append('text')
 
 // X label
 svg.append('text')
-.attr('x', width/2 + 100)
+.attr('x', width/2 + 90)
 .attr('y', height - 15 + 80)
 .attr('text-anchor', 'middle')
 .style('font-family', 'Helvetica')
@@ -50,7 +50,7 @@ svg.append('text')
 // Y label
 svg.append('text')
 .attr('text-anchor', 'middle')
-.attr('transform', 'translate(50,' + (height-100) + ')rotate(-90)')
+.attr('transform', 'translate(40,' + (height-100) + ')rotate(-90)')
 .style('font-family', 'Helvetica')
 .style('font-size', 12)
 .text('Money');
@@ -73,7 +73,7 @@ function update(dataset){
     .attr("cx", function (d) { return xScale(d[0]); } )
     .attr("cy", function (d) { return yScale(d[1]); } )
     .attr("r", 3)
-    .attr("transform", "translate(" + 100 + "," + 30 + ")")
+    .attr("transform", "translate(" + 90 + "," + 30 + ")")
     .style("fill", "rgb(249,133,36)")
     .attr("class", "dot");
         
@@ -85,7 +85,7 @@ function update(dataset){
     svg.append("path")
     .datum(dataset) 
     .attr("class", "line") 
-    .attr("transform", "translate(" + 100 + "," + 30 + ")")
+    .attr("transform", "translate(" + 90 + "," + 30 + ")")
     .attr("d", line)
     .style("fill", "none")
     .style("stroke", "rgb(249,133,36)")
