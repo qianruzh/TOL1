@@ -15,20 +15,25 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-        <section class="nav-bar">  
         <!-- <h3>Progress</h3>       -->
-    <ol class="progress-bar">
-      <li class="is-complete" onclick="jumpto1()"><span> Page1</span></li>  
-      <li class="is-complete" onclick="jumpto2()"><span>Page2</span></li>  
-      <li class="is-active"><span>Page3</span></li>
-    </ol>
-    </section>
+
+
+
   </head>
+
   <body>
+	<aside>
+	</aside>
+	<section>
+	<ol class="progress-bar">
+		<li class="is-complete" onclick="jumpto1()"><span> Page1</span></li>  
+		<li class="is-complete" onclick="jumpto2()"><span>Page2</span></li>  
+		<li class="is-active"><span>Page3</span></li>
+	</ol>
   	<div>
       <h1>Practice</h1>
       <div class="learninggoals">
-      <h4>Learning goals</h4>
+      <h3>Learning goals</h3>
       <ul>
         <li>Solve compound interest problems with the formula</li>
       </ul>
@@ -38,7 +43,6 @@
       <p>Now we have learned the formula to calculate compound interest, let’s try to use formula to solve the problem.  </p>
   	</div>
 
-  	<section>
   		<h2>Example Questions</h2>
       <div class="questionstyle">
   		<p class="questiontext">Mr. Z makes an initial investment of $ <span class="highlightp">5,000</span> for a period of <span class="highlightn">3 years</span>. Find the value of the investment after the three years if the investment earns the annual return of <span class="highlighti">12 %</span> compounded monthly.</p>
@@ -64,12 +68,7 @@
   			</div>
   		</div>
 
-  		</section>
-
-  	<section>
   		<h2>Practice</h2>
-
-  		<container>
   		<h3>Practice 1</h3>
 		<div class="questionstyle">
 		<p class="questiontext">Mr. Z makes an initial investment of <span class="highlightp">$ 5,000</span> for a period of <span class="highlightn">3 years</span>. Find the value of the investment after the three years if the investment earns the monthly return of <span class="highlighti">0.5 %</span> compounded <span class="highlighti">annually</span>.</p>
@@ -81,6 +80,7 @@
   			<div>
   			<p class="question">P (Initial value of investment) = $ <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb1pr">Correct! Initial value of investment are the amount of money that you start with.</div>
   			<div class="falsefeedback" id="fb1pf">What's the amount of money before MR. Z comming to the bank?</div>
 
@@ -88,6 +88,7 @@
   			<div>
   			<p class="question">i (Rate of return each compound) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb1ir">Correct! It's compounded annually so we should calculate the annuly return froom monthly return.</div>
   			<div class="falsefeedback" id="fb1if">Have you checked the frequency of compound and interest?</div>
 
@@ -95,6 +96,7 @@
   			<div>
   			<p class="question">n (total compounded times) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb1nr">Correct! It's compounded annually so the money will be compounded 3 times in 3 years.</div>
   			<div class="falsefeedback" id="fb1nf">Are you using the frequency of compound or interest?</div>
 
@@ -103,15 +105,14 @@
   			<div>
   			<p class="question">A = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb1ar">Correct! You've done a good calculation.</div>
   			<div class="falsefeedback" id="fb1af">Not really. You might want to redo the calculation.</div>
 
   		</div>
-  		</container>
 
-  		<container>
   		<h3>Practice 2</h3>
-      <div class="questionstyle">
+      	<div class="questionstyle">
   		<p class="questiontext">If an amount of $7,000 is deposited into a savings account at an annual interest rate of 5%, compounded yearly, what’s the value of the investment after 10 years?</p>
       </div>  
 
@@ -120,54 +121,56 @@
   			
   			<div>
   			<p class="question">P (Initial value of investment) = $ <input type="text" id="p1" name="answer" size="20"></p> 
-  			<button name="button">Press me</button></div>
+  			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb2pr">Correct! Initial value of investment are the amount of money that you start with.</div>
-        <div class="falsefeedback" id="fb2pf">What's the amount of money before MR. Z comming to the bank?</div>
+        	<div class="falsefeedback" id="fb2pf">What's the amount of money before MR. Z comming to the bank?</div>
 
   			<div>
   			<p class="question">i (Rate of return each compound) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb2ir">Correct! It's compounded annually so we could use the annual interest directly.</div>
         <div class="falsefeedback" id="fb2if">Have you checked the frequency of compound and interest?</div>
 
   			<div>
   			<p class="question">n (total compounded times) = <input type="text" id="p1" name="answer" size="20"></p> 
   			</div>
+			<button name="button" class="checkanswer">Check the Answer</button>
   			<div class="rightfeedback" id="fb2nr">Correct! It's compounded annually so the money will be compounded 10 times in 10 years.</div>
         <div class="falsefeedback" id="fb2nf">Are you using the frequency of compound or interest?</div>
 
 
 
-  			<div>
+  		<div>
   			<p class="question">A = <input type="text" id="p1" name="answer" size="20"></p> 
-  			</div>
-  			<div class="rightfeedback" id="fb2ar">Correct! You've done a good calculation.</div>
+  		</div>
+		<button name="button" class="checkanswer">Check the Answer</button>
+  		<div class="rightfeedback" id="fb2ar">Correct! You've done a good calculation.</div>
         <div class="falsefeedback" id="fb2af">Not really. You might want to redo the calculation.</div>
 
 
   		</div>
-  		</container>
 
-  	</section>
-
-    <section>
   		<h2>Additional Questions</h2>
-      <div class="questionstyle">
-  		<p class="questiontext">Suppose you have $1000, you can either choose to save it by keeping a simple interest at the rate of 12%, or to keep a compound interest at the rate of 10%, which one would you choose?</p>
-      </div>
+      	<div class="questionstyle">
+  			<p class="questiontext">Suppose you have $1000, you can either choose to save it by keeping a simple interest at the rate of 12%, or to keep a compound interest at the rate of 10%, which one would you choose?</p>
+     	 </div>
 
   		<textarea id="AQ" name="AQ" rows="4" cols="100">
       </textarea>
 
-  		<div class="feedback" id="fbaq">Try the interactive chart below to compare the amount of money you can get from conpound interst and simple interest.</div>
-
-  		</section>
-      
+  		<button name="button" class="checkanswer2">Show me the Hint</button>
+	  <div class="rightfeedback" id="fbaq">Try the interactive chart below to compare the amount of money you can get from conpound interst and simple interest.</div>
+      <p>Congratulations!</p>
   </body>
 </html>
 <footer>
-    
 </footer>
+</section>
+<aside>
+</aside>
+
 
 <script>
     function jumpto1() {

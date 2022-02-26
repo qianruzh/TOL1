@@ -14,16 +14,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-
-        <section class="nav-bar">       
-        <ol class="progress-bar">
+     
+        
+</head>
+<body>
+<aside></aside>
+<section>
+    <ol class="progress-bar">
         <li class="is-complete" onclick="jumpto1()"><span> Page1</span></li>  
         <li class="is-active"><span>Page2</span></li>  
         <li><span>Page3</span></li>
-        </ol>
-    </section>
-</head>
-<body>
+    </ol>
+
     <h1>Introduce: Compound Interst</h1>
       <div class="learninggoals">
       <h4>Learning goals</h4>
@@ -53,6 +55,7 @@
         <label>quarterly</label><br/>
         <input type="radio" value="6 months">
         <label>6 months</label><br/>
+    <button name="button" class="checkanswer2">Check the Answer</button>
     <div class="rightfeedback" id="step1-1r">Correct! Principal is the amount of money Jack started with.</div>
     <div class="falsefeedback" id="step1-1f">Make another try. Principal is the amount of money you started with.</div>
     
@@ -65,6 +68,7 @@
         <label>quarterly</label><br/>
         <input type="radio" value="6 months">
         <label>6 months</label><br/>
+    <button name="button" class="checkanswer2">Check the Answer</button>
     <div class="rightfeedback" id="step1-2r">Correct! The percentage is the rate of interest.</div>
     <div class="falsefeedback" id="step1-2f">Make another try. The percentage is the rate of interest.</div>
     
@@ -77,7 +81,7 @@
         <label>quarterly</label><br/>
         <input type="radio" value="6 months">
         <label>6 months</label><br/>
-
+    <button name="button" class="checkanswer2">Check the Answer</button>
     <div class="rightfeedback" id="step1-3r">Correct! The interest will be compounded each quarter.</div>
     <div class="falsefeedback" id="step1-3f">Make another try. Are you looking for frequency or the length?</div>
 
@@ -90,6 +94,7 @@
         <label>quarterly</label><br/>
         <input type="radio" value="6 months">
         <label>6 months</label><br/>
+    <button name="button" class="checkanswer2">Check the Answer</button>
     <div class="rightfeedback" id="step1-4r">Correct! The money will be withdrawed after 6 month.</div>
     <div class="falsefeedback" id="step1-4f">Make anotheer try. How long has the money been kept in the bank?</div>
     
@@ -98,12 +103,14 @@
         compound interest be calculated”. </p>
     <p>Do you know by what percentage is the principal going to increase each time when calculating the 
         compound interest? <input type="text"> </p>
+    <button name="button" class="checkanswer2">Check the Answer</button>
     <div class="rightfeedback" id="step1-5r">Correct! With an 20% annual interest, the quarter interest would be 5%. </div>
     <div class="falsefeedback" id="step1-5f">Make another try. With an 20% annual interest, what will be the quarter interest?</div>
     
 
     <p class="question">6. We already know “How long later Jack withdrew the money from the bank”. </p>
     <p>During that time, how many times will the compound interest be calculated? <input type="text"></p>
+    <button name="button" class="checkanswer">Check the Answer</button>
     <div class="rightfeedback" id="step1-6r">You are right! In 6 months the money will be compunded twice?</div>
     <div class="falsefeedback" id="step1-6f">Make another try. How many quarters does 6 moths have?</div>  
 
@@ -114,14 +121,17 @@
         E.g. A means the sum of principal and interest, which is what we are going to calculate.</p>
 
     <p class="question">1. <span class="highlightp">P</span> means <input type="text">, which is: <input type="text"> </p>
+    <button name="button" class="checkanswer">Check the Answer</button>
     <div class="rightfeedback" id="step2-1r">Correct! "P" means "Principal", which is the amount of money someone starts with.</div>
     <div class="falsefeedback" id="step2-1f">Not quite right. "P" represents "Principal", which is the amount of money someone starts with.</div>
 
     <p class="question">2. <span class="highlighti">i</span> means <input type="text">, which is: <input type="text"> </p>
+    <button name="button" class="checkanswer">Check the Answer</button>
     <div class="rightfeedback" id="step2-2r">You are right! "i" means "interest", which is the return rate.</div>
     <div class="falsefeedback" id="step2-2f">Make another try. "i" means "interest", which is the return rate.</div>
 
     <p class="question">3. <span class="highlightn">n</span> means <input type="text">, which is: <input type="text"> </p>
+    <button name="button" class="checkanswer">Check the Answer</button>
     <div class="rightfeedback" id="step2-3r">Correct! "n" means number, which is number of times interest applied per time period.</div>
     <div class="falsefeedback" id="step2-3f">Not quite right. "n" means number, which is number of times interest applied per time period.</div>
 
@@ -133,14 +143,22 @@
     <p class="question"> 1. What is the total amount Jack got after 6 month?
     <input id="step3-1" name="step3-1" type="text">
     </input></p>
+    <button name="button" class="checkanswer">Check the Answer</button>
     <div class="rightfeedback" id="step3-1r">Correct! You've done a good calculation.</div>
     <div class="falsefeedback" id="step3-1f">Not really. You might want to redo the calculation.</div>
  
     <p class="question">2. Briefly explain how to calculate the interest?</p>
     <textarea id="step3-2" name="step3-2" rows="4" cols="100">
     </textarea>
+    <button name="button" class="checkanswer2">Check the Answer</button>
     <div class="rightfeedback" id="step3-2r">That is a great job!</div>
     <!-- <div class="falsefeedback" id="step3-2f"></div> -->
+
+    <div class="nextpage">
+        <button name="button" class="nextp" onclick="jumpto2()">Go to the next page</button>
+    </div>
+</section>
+<aside></aside>
 
 </body>
 <footer>
