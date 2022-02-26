@@ -27,33 +27,6 @@
   </head>
 
   <body>
-    <!-- <nav>
-      <header>
-        <ul>
-          <li>
-              you are welcome to change the menu word for a hamburger icon or something of the like 
-              <a href="#"><img src="images/hamburger.png"></a>
-              <ul>
-                  <li>
-                      <a href="#">link one</a>
-                  </li>
-                  <li>
-                      <a href="#">link two</a>
-                  </li>
-                  <li>
-                      <a href="#">link three</a>                         
-                  </li>
-                  <li>
-                      <a href="#">link four</a>
-                  </li>
-                  <li>
-                      <a href="#">link five</a>
-                  </li>
-              </ul>
-          </li>
-      </ul>
-      </header>
-  </nav> -->
 
   	<div>
       <h1>Make A Guess</h1>
@@ -71,7 +44,7 @@
       <p> Hi there! Now that we have learned about Simple Interest, are you ready to learn more about how the interest system works? Actually, besides the Simple Interest, <b>Compound Interest</b> is also very common in our daily life. Let’s look at why.</p>
   		<h2>Example Questions</h2>
       <div class="questionstyle">
-  		<p class="questiontext">Let’s meet Jerry, a middle schooler who wants to learn about personal finance. Suppose he wants to save <span class="highlightp">$1000</span> and would like to deposit it in the bank. Jerry chooses to keep a compound interest at the rate <span class="highlighti">12%</span>. How much money will Jerry have after <span class="highlightn">3 years</span>?</p>
+  		<p class="questiontext">Let’s meet Jerry, a middle schooler who wants to learn about personal finance. Suppose he wants to save <span class="highlightp">$1000</span> and would like to deposit it in the bank. Jerry chooses to keep a compound interest at the rate <span class="highlighti">20%</span>. How much money will Jerry have after <span class="highlightn">3 years</span>?</p>
       </div>
   
   		<div class="subquestion">
@@ -83,44 +56,85 @@
         <svg>AAA</svg>
   		</div>
 
-      <h3>Fill in the blank</h3>
+      <h3>Try It Yourself</h3>
 
   		<div>
-      <p class="question">1.The <span class="highlightp">initial principal</span> investment for Jerry is $ <input type="text" id="p1" name="answer" size="20"> . </p>
+      <p class="question">1. The <span class="highlightp">initial principal</span> investment for Jerry is $ <input type="text" id="p1" name="answer" size="20"> . </p>
       </div>
+      <div class="rightfeedback" id="p1-part1-1r">Correct! The initial principal is $10000. </div>
+      <div class="falsefeedback" id="p1-part1-1f">Make another try.</div>
 
       <div>
-        <p class="question">2.The <span class="highlighti">interest rate</span> that is added on to the amount Jerry invested is <input type="text" id="p1" name="answer" size="20"> %. </p>
+        <p class="question">2. The <span class="highlighti">interest rate</span> that is added on to the amount Jerry invested is <input type="text" id="p1" name="answer" size="20"> %. </p>
       </div>
+      <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+      <div class="rightfeedback" id="p1-part1-2r">Correct! The interest rate is 20%. </div>
+      <div class="falsefeedback" id="p1-part1-2f">Make another try.</div>
 
       <div>
-        <p class="question">3. The <span class="highlightn">length of time</span> this interest rate accumulates in the initial graph is <input type="text" id="p1" name="answer" size="20"> year.</p>
+        <p class="question">3. The <span class="highlightn">length of time</span> this interest rate accumulates in the initial graph is <input type="text" id="p1" name="answer" size="20"> year(s).</p>
       </div>
+      <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+      <div class="rightfeedback" id="p1-part1-3r">Correct! The length of time is 3 years. </div>
+      <div class="falsefeedback" id="p1-part1-3f">Make another try.</div>
 
       <div>
-        <p class="question">4. How much will be in Jerry’s account after these years?</p>
+        <p class="question">4. How much will be in Jerry’s account after 3 years?</p>
         <ul class="subq">
           <li class="question">
           a. At the end of the first year, Jerry will have $ <input type="text" id="p1" name="answer" size="20"> interest for this year, and have $ <input type="text" id="p1" name="answer" size="20"> in his account.
           </li> 
+          <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+          <div class="rightfeedback" id="p1-part1-4r">Correct! The interest after the first year is $2000. And the total amount would be $12000. </div>
+          <div class="falsefeedback" id="p1-part1-4f">Make another try.</div>
 
           <li class="question">
           b. At the end of the second year, Jerry will have $ <input type="text" id="p1" name="answer" size="20"> interest for this year, and have $ <input type="text" id="p1" name="answer" size="20"> in his account.
           </li> 
+          <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+          <div class="rightfeedback" id="p1-part1-5r">Correct! The interest after the second year is $2400. And the total amount would be $14400. </div>
+          <div class="falsefeedback" id="p1-part1-5f">Make another try.</div>
 
           <li class="question">
           c. At the end of the third year, Jerry will have $ <input type="text" id="p1" name="answer" size="20"> interest for this year, and have $ <input type="text" id="p1" name="answer" size="20"> in his account.
-          </li>    
+          </li>
+          <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+          <div class="rightfeedback" id="p1-part1-6r">Correct! The interest after the first year is $2880. And the total amount would be $17280. </div>
+          <div class="falsefeedback" id="p1-part1-6f">Make another try.</div>    
         </ul>
       </div>
 
 
       <p class="question">5. Could you build on the findings in the previous question to get a possible formula for the amount of money Jerry will have at the end of n years with the 12% compound interest rate? $ <span><input type="text" id="p1" name="answer" size="20"></span></p>
       
+      <h3>Find the Pattern</h3>
+      Now Jerry wants to extent the length of years for saving the money.
+      Try to manipulate the number of year and answer the following questions.
+      <p class="question">1. How much will be in Jerry’s account after 5 years? $<span><input type="text" id="p1" name="answer" size="20"></span></p>
+      <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+      <div class="rightfeedback" id="p1-part2-1r">Correct! The amount after 5 years is  </div>
+      <div class="falsefeedback" id="p1-part2-1f">Make another try.</div> 
 
-      <p class="question">6. What if the initial amount of money is P, the interest rate is r, the year is n, the final amount of money is A, can you build a new formula based on the previous answer? $ <span><input type="text" id="p1" name="answer" size="20"></span></p>
-  
+      <p class="question">2. How much will be in Jerry’s account after 7 years? $<span><input type="text" id="p1" name="answer" size="20"></span></p>
+      <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+      <div class="rightfeedback" id="p1-part2-2r">Correct! The amount after 7 years is  </div>
+      <div class="falsefeedback" id="p1-part2-2f">Make another try.</div> 
+      
+      <p class="question">3. How much will be in Jerry’s account after 10 years? $<span><input type="text" id="p1" name="answer" size="20"></span></p>
+      <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+      <div class="rightfeedback" id="p1-part2-3r">Correct! The amount after 10 years is  </div>
+      <div class="falsefeedback" id="p1-part2-3f">Make another try.</div> 
 
+      <p class="question">4. The tendency of the final amount of money is _____ with the years increasing.</p>
+        <input type="radio" value="​​Exponential">
+        <label> ​​Exponential </label><br/>
+        <input type="radio" value="Linear">
+        <label> Linear</label><br/>
+        <input type="radio" value="Irregular">
+        <label> Irregular </label><br/>
+      <!-- <div class="rightfeedback" id="p1-part1-2r">Good guess! </div> -->
+      <div class="rightfeedback" id="p1-part2-4r">Correct! The tendency is expotential! </div>
+      <div class="falsefeedback" id="p1-part2-4f">Make another try. Look carefully at the pattern!</div> 
     </section>
   </body>
   <footer>
