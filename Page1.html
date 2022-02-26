@@ -15,7 +15,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
           
   </head>
 
@@ -52,7 +53,8 @@
 
   		<div>
   		  <p class="question">Sample Graph, suppose it be interactive and learners can adjust the years</p>
-        <svg>AAA</svg>
+        <svg id="svg"></svg>
+        <p>You can adjust the deposit year <input id="numInput" type="number" placeholder="0"> and see the change of money.</p>
   		</div>
 
       <h3>Try It Yourself</h3>
@@ -150,6 +152,9 @@
       </div>
     </section>
     <aside></aside>
+
+    <script src="graphViz.js"></script>
+
   </body>
   <footer>
     
