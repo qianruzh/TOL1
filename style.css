@@ -457,5 +457,31 @@ button{
     bottom: -18px;
     background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208%208%22%3E%3Cpath%20fill%3D%22%23ed1c24%22%20d%3D%22M4%200l4%208H0z%22%2F%3E%3C%2Fsvg%3E');
   }
-  
+
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 100px;					
+    height: 40px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: white;	
+    stroke:black;
+    border: solid;
+    border-width: 2px;		
+    border-radius: 5px;			
+    pointer-events: none;			
+}
+
+#fbaq-1{
+  display: none;
+}
+ 
+#fbaq-2{
+  display: none;
+}
+
+#fbaq-3{
+  display: none;
+}
   

@@ -25,6 +25,17 @@ var ans_p2_2_2 = "interest";
 var ans_p2_2_3 = "number";
 var ans_p2_3_1 = 11025;
 
+// Page 3 param
+var ans_p3_1_1 = 5000;
+var ans_p3_1_2 = 6;
+var ans_p3_1_3 = 3;
+var ans_p3_1_4 = 5955.08;
+
+var ans_p3_2_1 = 7000;
+var ans_p3_2_2 = 5;
+var ans_p3_2_3 = 10;
+var ans_p3_2_4 = 11402.26;
+
 // Page 1
 giveFeedback_fill_in_blank("btn-p1-1-1","p1-1-1","p1-part1-1r","p1-part1-1f", ans_p1_1_1);
 giveFeedback_fill_in_blank("btn-p1-1-2","p1-1-2","p1-part1-2r","p1-part1-2f", ans_p1_1_2);
@@ -48,6 +59,18 @@ giveFeedback_fill_in_blank("btn-p2-2-1","p2-2-1","step2-1r","step2-1f", ans_p2_2
 giveFeedback_fill_in_blank("btn-p2-2-1","p2-2-2","step2-2r","step2-2f", ans_p2_2_2);
 giveFeedback_fill_in_blank("btn-p2-2-1","p2-2-3","step2-3r","step2-3f", ans_p2_2_3);
 giveFeedback_fill_in_blank("btn-p2-3-1","p2-3-1","step3-1r","step3-1f", ans_p2_3_1);
+
+// Page 3
+giveFeedback_fill_in_blank("btn-p3-1-1","p3-1-1","fb1pr","fb1pf", ans_p3_1_1);
+giveFeedback_fill_in_blank("btn-p3-1-2","p3-1-2","fb1ir","fb1if", ans_p3_1_2);
+giveFeedback_fill_in_blank("btn-p3-1-3","p3-1-3","fb1nr","fb1nf", ans_p3_1_3);
+giveFeedback_fill_in_blank("btn-p3-1-4","p3-1-4","fb1ar","fb1af", ans_p3_1_4);
+giveFeedback_fill_in_blank("btn-p3-2-1","p3-2-1","fb2pr","fb2pf", ans_p3_2_1);
+giveFeedback_fill_in_blank("btn-p3-2-2","p3-2-2","fb2ir","fb2if", ans_p3_2_2);
+giveFeedback_fill_in_blank("btn-p3-2-3","p3-2-3","fb2nr","fb2nf", ans_p3_2_3);
+giveFeedback_fill_in_blank("btn-p3-2-4","p3-2-4","fb2ar","fb2af", ans_p3_2_4);
+
+
 
 // functions
 function giveFeedback_fill_in_blank(btnId, inputId, rightFeedbackId, falseFeedbackId, ans){
